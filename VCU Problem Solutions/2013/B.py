@@ -1,3 +1,19 @@
+# sample input 
+"""
+3
+0123
+5890
+4444
+"""
+
+#sample output
+
+"""
+8765
+5430
+9999
+"""
+
 iterations = int(input())
 
 input_data = []
