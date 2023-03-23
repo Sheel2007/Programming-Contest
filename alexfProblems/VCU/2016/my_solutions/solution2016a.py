@@ -1,10 +1,10 @@
-# Problem from https://egr.vcu.edu/media/engineering/documents/cs/VCU_HSContest_2016_Problems.pdf
+# Problem A from https://egr.vcu.edu/media/engineering/documents/cs/VCU_HSContest_2016_Problems.pdf
 import sys
 
 from typing import TextIO
 
 def fast_distance(list1, list2, dimensions):
-    # Computes a number that can be used when needed to check if distances are larger or smaller but without actually computing the distance.
+    # Computes a number that can be used when needed to check if distances are larger or smaller but without actually computing the distance. Turns out this is called Manhattan distance.
     # abs(x1 - x2) + abs(y1 - y2) + ... + abs(n1 - n2)
     distance_sum = 0
     for x in range(0, dimensions):
@@ -34,10 +34,7 @@ def main(input: TextIO, output: TextIO):
         close_objects = []
         for known_object in known_objects:
             distance = fast_distance(known_object, unknown_object, number_dimensions)
-            for i in range(0, len(close_objects)):
-                
 
-            close_objects = close_objects[:k_value]
 
 if __name__ == "__main__":
     main(sys.stdin, sys.stdout)
