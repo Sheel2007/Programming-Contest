@@ -4,8 +4,8 @@ import sys
 from typing import TextIO
 
 def main(input: TextIO, output: TextIO) -> None:
-    protein1: str = input.readline().replace("\n", "")
-    protein2: str = input.readline().replace("\n", "")
+    protein1: str = input.readline().strip()
+    protein2: str = input.readline().strip()
 
     if len(protein1) > len(protein2):
         short_length: int = len(protein2)

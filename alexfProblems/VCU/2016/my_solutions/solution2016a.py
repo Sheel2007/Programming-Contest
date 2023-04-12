@@ -3,19 +3,19 @@ import sys
 
 from typing import TextIO
 
-def fast_distance(list1, list2, dimensions):
+def fast_distance(list1: list[int], list2: list[int], dimensions) -> int:
     # Computes a number that can be used when needed to check if distances are larger or smaller but without actually computing the distance. Turns out this is called Manhattan distance.
     # abs(x1 - x2) + abs(y1 - y2) + ... + abs(n1 - n2)
     distance_sum = 0
     for x in range(0, dimensions):
-        n1 = list1[x]
-        n2 = list2[x]
+        n1: int = list1[x]
+        n2: int = list2[x]
         distance_sum += abs(n1 - n2)
     return distance_sum
 
 # I've added to typing for tab completion
-def main(input: TextIO, output: TextIO):
-    parameters = input.readline().split(" ")
+def main(input: TextIO, output: TextIO) -> None:
+    parameters: list[str] = input.readline().split(" ")
     number_known_objects = int(parameters[0])
     number_unknown_objects = int(parameters[2])
     number_dimensions = int(parameters[1])

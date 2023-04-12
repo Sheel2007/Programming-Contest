@@ -2,8 +2,9 @@ import sys
 
 from typing import TextIO
 
+
 # typing for tab completion
-def main(input: TextIO, output: TextIO):
+def main(input: TextIO, output: TextIO) -> None:
     pass
 
 if __name__ == "__main__":

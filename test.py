@@ -13,7 +13,8 @@ def classify_knn(known_objects, unknown_objects, k):
     results = []
     for unknown in unknown_objects:
         # Calculate the distance between the unknown object and all known objects
-        distances = [(euclidean_distance(unknown[:-1], known[:-1]), known[-1]) for known in known_objects]
+        #distances = [(euclidean_distance(unknown[:-1], known[:-1]), known[-1]) for known in known_objects] # AI Bug
+        distances = [(euclidean_distance(unknown, known[:-1]), known[-1]) for known in known_objects] # Corrected
         # Sort the distances by increasing order
         distances.sort()
         # Get the k nearest neighbors
