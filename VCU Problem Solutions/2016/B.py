@@ -1,35 +1,13 @@
-"""
-# sample input
-3
-0123
-5890
-4444
+import sys
 
-#sample output
-8765
-5430
-9999
+for line in sys.stdin:
+    line = line.split('\n')[0]
 
-"""
+    line = list(map(int, list(line)))
 
-iterations = int(input())
-
-input_data = []
-
-for i in range(1, iterations+1):
-	input_data.append(input())
-
-
-for i in input_data:
-	data = []
-	for j in i:
-		j = (int(j) + 5) % 10
-	
-		data.append(j)
-	
-	data[0], data[3] = data[3], data[0]
-	data[1], data[2] = data[2], data[1]
-	answer = ""
-	for num in data:
-		answer += str(num)
-	print(answer)
+    for i in range(len(line)):
+        line[i] = (line[i]+5)%10
+    line[0], line[3] = line[3], line[0]
+    line[1], line[2] = line[2], line[1]
+    
+    print(line[0], line[1], line[2], line[3], sep='')
