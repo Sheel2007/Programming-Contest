@@ -1,0 +1,8 @@
+1
+6
+achilleus 47.5
+cronus 34.67
+cyrus 501.42
+septimus 761.55
+lucius 94.91
+magnus 12.1
