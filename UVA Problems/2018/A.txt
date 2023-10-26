@@ -1,0 +1,6 @@
+5
+2 Bing Bong
+4 Bing Bong likes Riley
+7 Spelled in lower case is bing bong
+9 Do not replace the last 4 letters of gabbing
+3 No replacements here
