@@ -1,7 +1,7 @@
 ## Permutations:
 
 $$
-_{n} P_{r}=\frac{n !}{(n-r) !}
+_n P_r=\frac{n !}{(n-r) !}
 $$
 
 ## Combinations:
@@ -17,6 +17,7 @@ $$
 
 ## Binomial Coefficient:
 The binomial coefficient is the number of ways of picking unordered outcomes from possibilities
+
 $$
 \binom {n}{k}=\frac {n!}{k!(n-k)!}
 $$
