@@ -1,17 +1,13 @@
-line = list(map(int, input().split()))
-line.pop(0)
-
-ones = []
-for _ in range(len(line)):
-    ones.append(1)
-
+line = list(map(int, input().split()))[:-1]
 iterations = 0
+
 while True:
-    # Calculate the absolute differences
-    line = [abs(line[i] - line[(i + 1) % len(line)]) for i in range(len(line))]
-    iterations += 1
-        
-    if ones == line:
+    iterations = iterations + 1
+    line[0] = abs(line[0] - line[1])
+    line[1] = abs(line[1] - line[2])
+    line[2] = abs(line[2] - line[3])
+    line[3] = abs(line[3] - line[0])
+    if line[0] == line[1] == line[2] == line[3]:
         break
     
 print(iterations)
