@@ -43,3 +43,4 @@ graph = {
 start_node = 'A'
 shortest_paths = dijkstra(graph, start_node)
 print(shortest_paths)
+# Outputs {'A': 0, 'B': 3, 'C': 4, 'D': 6}
